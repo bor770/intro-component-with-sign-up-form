@@ -1,0 +1,73 @@
+form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  justify-content: space-between;
+  padding: 25px 25px 0;
+}
+
+form>* {
+  border-radius: 5px;
+  height: 50px;
+}
+
+input {
+  border: #ddd solid 1px;
+  border-radius: inherit;
+  display: block;
+  height: 100%;
+  padding-left: 15px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--red);
+  font-size: 0.6rem;
+  font-style: italic;
+  text-align: right;
+}
+
+button {
+  background-color: var(--green);
+  border: none;
+  box-shadow: 0 5px #49ae84;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+footer {
+  align-self: center;
+  color: var(--grayish-blue);
+  font-size: 0.6rem;
+  letter-spacing: 0.7px;
+  line-height: 2;
+  transform: translateY(-10px);
+  width: 250px;
+}
+
+.terms {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.ng-submitted .ng-invalid {
+  background-image: url(../../assets/icon-error.svg);
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  border-color: var(--red);
+}
+

@@ -1,0 +1,31 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <input placeholder="First Name" formControlName="firstName" />
+    <p *ngIf="form.touched && !form.controls.firstName.valid">
+      First Name cannot be empty
+    </p>
+  </div>
+  <div>
+    <input placeholder="Last Name" formControlName="lastName" />
+    <p *ngIf="form.touched && !form.controls.lastName.valid">
+      Last Name cannot be empty
+    </p>
+  </div>
+  <div>
+    <input type="email" placeholder="Email Address" formControlName="email" />
+    <p *ngIf="form.touched && !form.controls.email.valid">
+      Looks like this is not an email
+    </p>
+  </div>
+  <div>
+    <input type="password" placeholder="Password" formControlName="password" />
+    <p *ngIf="form.touched && !form.controls.password.valid">
+      Password cannot be empty
+    </p>
+  </div>
+  <button>Claim Your Free Trial</button>
+  <footer>
+    By clicking the button, you are agreeing to our
+    <a class="terms">Terms and Services</a>
+  </footer>
+</form>
